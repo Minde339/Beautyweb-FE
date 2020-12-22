@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import PriceTable from "../Components/PriceTable";
 
 const useStyles = makeStyles((theme) => ({
   paper: {
@@ -18,18 +18,7 @@ export default function Homepage() {
     <>
       <Grid item xs={12}>
         <Paper className={classes.paper}>This is prices Page</Paper>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
+        <PriceTable className={classes.table} />
       </Grid>
     </>
   );
