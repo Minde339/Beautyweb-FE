@@ -2,9 +2,12 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
+import Product from "../Components/Product";
 
 const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
@@ -15,22 +18,21 @@ const useStyles = makeStyles((theme) => ({
 export default function Homepage() {
   const classes = useStyles();
   return (
-    <>
-      <Grid item xs={12}>
-        <Paper className={classes.paper}>This is products Page</Paper>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
-        <Button size="large" className={classes.margin}>
-          Large
-        </Button>
+    <div className={classes.root}>
+      <Grid container spacing={3}>
+        <Grid item xs={12}>
+          <Paper className={classes.paper}>This is products Page</Paper>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <Product />
+        </Grid>
       </Grid>
-    </>
+    </div>
   );
 }

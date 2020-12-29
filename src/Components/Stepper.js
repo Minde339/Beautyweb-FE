@@ -12,29 +12,33 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 const tutorialSteps = [
   {
     imgPath:
-      "https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://media.gettyimages.com/photos/girlfriends-getting-new-haircut-picture-id450245049?s=2048x2048",
   },
   {
     imgPath:
-      "https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://media.gettyimages.com/photos/empty-black-chairs-and-mirrors-in-barber-shop-picture-id1030255416?s=2048x2048",
   },
   {
     imgPath:
-      "https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80",
+      "https://media.gettyimages.com/photos/hair-cutting-during-pandemic-picture-id1225156964?s=2048x2048",
   },
   {
     imgPath:
-      "https://images.unsplash.com/photo-1518732714860-b62714ce0c59?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://media.gettyimages.com/photos/hair-dresser-small-business-picture-id1139132186?s=2048x2048",
   },
   {
     imgPath:
-      "https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60",
+      "https://media.gettyimages.com/photos/the-hairdresser-is-cutting-out-hair-picture-id899173534?s=2048x2048",
+  },
+  {
+    imgPath:
+      "https://media.gettyimages.com/photos/hairdresser-using-hairdryer-picture-id956385860?s=2048x2048",
   },
 ];
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: 400,
+    maxWidth: "100%",
     flexGrow: 1,
   },
   header: {
@@ -45,9 +49,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.default,
   },
   img: {
-    height: 255,
-    display: "block",
-    maxWidth: 400,
+    height: "20%",
+    maxWidth: "100%",
     overflow: "hidden",
     width: "100%",
   },

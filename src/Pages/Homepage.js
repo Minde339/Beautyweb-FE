@@ -20,12 +20,8 @@ export default function Homepage() {
   return (
     <>
       <Grid item xs={12}>
-        <Paper className={classes.paper}>
-          This is Homepage
-          <Grid item xs={6} className={classes.stepper}>
-            <Stepper />
-          </Grid>
-        </Paper>
+        <Stepper />
+        <Paper className={classes.paper}>This is Homepage</Paper>
       </Grid>
     </>
   );
