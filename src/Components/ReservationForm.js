@@ -16,16 +16,28 @@ export default function ReservationForm() {
 
   return (
     <form className={classes.root} noValidate autoComplete="off">
-      <div>
-        <TextField
-          required
-          id="outlined-required"
-          label="Required"
-          defaultValue="Hello World"
-          variant="outlined"
-        />
-        <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      </div>
+      <TextField
+        required
+        id="outlined-required"
+        label="Vardas"
+        defaultValue=""
+        variant="outlined"
+      />
+      <TextField
+        required
+        id="outlined-required"
+        label="Pavardė"
+        defaultValue=""
+        variant="outlined"
+      />
+      <TextField
+        required
+        id="outlined-required"
+        label="Telefonas"
+        defaultValue=""
+        variant="outlined"
+      />
+      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
     </form>
   );
 }

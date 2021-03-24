@@ -8,9 +8,7 @@ const useStyles = makeStyles((theme) => ({
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-  stepper: {
+    backgroundColor: "#1b1b1b",
     alignContent: "center",
   },
 }));
@@ -20,8 +18,9 @@ export default function Homepage() {
   return (
     <>
       <Grid item xs={12}>
-        <Stepper />
-        <Paper className={classes.paper}>This is Homepage</Paper>
+        <Paper className={classes.paper}>
+          <Stepper />
+        </Paper>
       </Grid>
     </>
   );

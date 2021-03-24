@@ -15,7 +15,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 2,
-    backgroundColor: "secondary",
+    backgroundColor: "#1b1b1b",
   },
   title: {
     flexGrow: 1,
@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
   buttons: {
     marginRight: "40%",
     margin: theme.spacing(2),
-    marginLeft: theme.spacing,
   },
 }));
 
@@ -33,28 +32,28 @@ export default function App() {
     <Router>
       <div className={classes.root}>
         <Button size="large">
-          <Link color="primary" to="/">
+          <Link color="#ffffff" to="/">
             Pradžia
           </Link>
         </Button>
         <Button size="large">
           <Link to="/services">Paslaugos</Link>
         </Button>
-        <Button color="primary" size="large">
+        <Button color="#ffffff" size="large">
           <Link to="/prices">Kainoraštis</Link>
         </Button>
-        <Button color="primary" size="large">
+        <Button color="#ffffff" size="large">
           <Link to="/products">Produktai</Link>
         </Button>
-        <Button color="primary" size="large">
+        <Button color="#ffffff" size="large">
           <Link to="/learn">Mokymai</Link>
         </Button>
         <Button size="large">
-          <Link color="primary" to="/reservation">
+          <Link color="#ffffff" to="/reservation">
             Rezervacija
           </Link>
         </Button>
-        <Button color="primary" size="large">
+        <Button color="#ffffff" size="large">
           <Link to="/contacts">Kontaktai</Link>
         </Button>
         {/* A <Switch> looks through its children <Route>s and

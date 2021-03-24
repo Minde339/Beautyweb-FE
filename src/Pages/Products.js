@@ -23,13 +23,28 @@ export default function Homepage() {
         <Grid item xs={12}>
           <Paper className={classes.paper}>This is products Page</Paper>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={3}>
           <Product />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={3}>
           <Product />
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={3}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={3}>
+          <Product />
+        </Grid>
+        <Grid item xs={12} sm={3}>
           <Product />
         </Grid>
       </Grid>

@@ -17,8 +17,8 @@ export default function Reservation() {
   return (
     <>
       <Grid item xs={12}>
-        <Paper className={classes.paper}>This is Reservation</Paper>
-        <ReservationForm />
+        <Paper className={classes.paper}><ReservationForm /></Paper>
+        
       </Grid>
     </>
   );

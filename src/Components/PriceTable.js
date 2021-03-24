@@ -40,15 +40,20 @@ export default function PriceTable() {
           aria-controls="panel1bh-content"
           id="panel1bh-header"
         >
-          <Typography className={classes.heading}>General settings</Typography>
+          <Typography className={classes.heading}>Kirpimas</Typography>
           <Typography className={classes.secondaryHeading}>
-            I am an accordion
+            Kaina 50e
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Nulla facilisi. Phasellus sollicitudin nulla et quam mattis feugiat.
-            Aliquam eget maximus est, id dignissim quam.
+            Labai Geras Kirpimas
+            <img
+              alt="cut1"
+              width="100%"
+              height="100%"
+              src="https://d1szl5n46w4w7o.cloudfront.net/files/uploaded/rte/kirpimas_bliudeliu_skutimas_berniukui.png"
+            ></img>
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -61,9 +66,9 @@ export default function PriceTable() {
           aria-controls="panel2bh-content"
           id="panel2bh-header"
         >
-          <Typography className={classes.heading}>Users</Typography>
+          <Typography className={classes.heading}>Kirpimas 2</Typography>
           <Typography className={classes.secondaryHeading}>
-            You are currently not an owner
+            Kaina 70e
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -83,9 +88,9 @@ export default function PriceTable() {
           aria-controls="panel3bh-content"
           id="panel3bh-header"
         >
-          <Typography className={classes.heading}>Advanced settings</Typography>
+          <Typography className={classes.heading}>Kirpimas 3</Typography>
           <Typography className={classes.secondaryHeading}>
-            Filtering has been entirely disabled for whole web server
+            Kaina 80e
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
@@ -104,7 +109,10 @@ export default function PriceTable() {
           aria-controls="panel4bh-content"
           id="panel4bh-header"
         >
-          <Typography className={classes.heading}>Personal data</Typography>
+          <Typography className={classes.heading}>Kirpimas 4</Typography>
+          <Typography className={classes.secondaryHeading}>
+            Kaina 80e
+          </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
