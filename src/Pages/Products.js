@@ -1,53 +1,9 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import Product from "../Components/Product";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-  },
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
-
-export default function Homepage() {
-  const classes = useStyles();
+export default function Products() {
   return (
-    <div className={classes.root}>
-      <Grid container spacing={3}>
-        <Grid item xs={12}>
-          <Paper className={classes.paper}>This is products Page</Paper>
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-        <Grid item xs={12} sm={3}>
-          <Product />
-        </Grid>
-      </Grid>
-    </div>
+    <>
+      <h1>This is products Page</h1>
+    </>
   );
 }

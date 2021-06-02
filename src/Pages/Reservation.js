@@ -1,25 +1,21 @@
 import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
-import ReservationForm from "../Components/ReservationForm";
-
-const useStyles = makeStyles((theme) => ({
-  paper: {
-    padding: theme.spacing(2),
-    textAlign: "center",
-    color: theme.palette.text.secondary,
-  },
-}));
+import { Container, Form, Row, Col } from "react-bootstrap";
 
 export default function Reservation() {
-  const classes = useStyles();
   return (
-    <>
-      <Grid item xs={12}>
-        <Paper className={classes.paper}><ReservationForm /></Paper>
-        
-      </Grid>
-    </>
+    <Container>
+      <Form>
+        <Row>
+          <Col xs={6}>
+            <Form.Label>Vardas</Form.Label>
+            <Form.Control placeholder="Vardas" />
+          </Col>
+          <Col xs={6}>
+            <Form.Label>Pavardė</Form.Label>
+            <Form.Control placeholder="Pavardė" />
+          </Col>
+        </Row>
+      </Form>
+    </Container>
   );
 }

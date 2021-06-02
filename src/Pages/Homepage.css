@@ -1,0 +1,9 @@
+.containerTest {
+  justify-content: center;
+}
+.image {
+  width: 100%;
+  height: 80vh;
+  justify-self: center;
+  object-fit: contain;
+}
